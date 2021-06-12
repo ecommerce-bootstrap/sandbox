@@ -5,10 +5,11 @@ import Home from '../Home';
 
 export default function App() {
   async function responseGoogle(response) {
-    const verify = await verifyToken();
-    console.log(verify, response);
+    const verify = await verifyToken(response);
+    
+    console.log(response);
   }
-
+  
   return (
     <>
       <Home />
